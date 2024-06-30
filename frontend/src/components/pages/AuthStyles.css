@@ -1,0 +1,40 @@
+.auth-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.forms-container {
+    display: flex;
+    width: 200%;
+    /* Since it contains two forms side by side */
+    transition: transform 0.5s ease;
+}
+
+.forms-container.shift {
+    transform: translateX(-50%);
+}
+
+.login-form,
+.register-form {
+    width: 50%;
+    /* Each form takes half of the parent width */
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.toggle-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.toggle-text {
+    color: #0077cc;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+}
