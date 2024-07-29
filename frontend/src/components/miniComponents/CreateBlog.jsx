@@ -31,6 +31,7 @@ const CreateBlog = () => {
     const file = e.target.files[0];
     const reader = new FileReader();
     reader.readAsDataURL(file);
+    // Nothing just for fun
     reader.onload = () => {
       setMainImagePreview(reader.result);
       setMainImage(file);
